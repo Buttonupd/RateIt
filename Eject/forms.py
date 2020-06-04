@@ -18,7 +18,7 @@ class UploadForm(forms.ModelForm):
 
 class ReviewForm(forms.ModelForm):
     class Meta:
-        models = Reviews
+        model = Reviews
         design = forms.IntegerField(label_suffix='Design Rating')
         usability = forms.IntegerField(label_suffix='Usability Rating')
         content = forms.IntegerField(label_suffix='content Rating')
