@@ -41,8 +41,8 @@ class Project(models.Model):
         return projects
 
     @classmethod
-    def find_project(cls,serach_term):
-        project = Project.objects.all(title__icontains=serach_term)
+    def find_project(cls,search_term):
+        project = Project.objects.filter(title__icontains=search_term)
         return project
 
 
