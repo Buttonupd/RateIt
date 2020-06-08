@@ -5,8 +5,8 @@ from .models import *
 class ProfileTest(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create(id = 1, username='zyzu')
-        self.profile = Profile.objects.create(user = self.user,bio = 'blow away', phone= 2356789)
+        self.user = User.objects.create(id = 1, username='menu')
+        self.profile = Profile.objects.create(user = self.user,bio = 'made men', phone= 2356789)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.profile,Profile))
@@ -22,14 +22,14 @@ class ProfileTest(TestCase):
 class ProjectTest(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create(id = 1, username='zyzu')
-        self.profile = Profile.objects.create(user = self.user,bio = 'blow away',phone= 2356789)
+        self.user = User.objects.create(id = 1, username='menu')
+        self.profile = Profile.objects.create(user = self.user,bio = 'made men',phone= 00000000)
 
         self.project = Project.objects.create(posted_by = self.user,
                                           profile = self.profile,
                                           title = 'Blog',
                                           description='turn up',
-                                          project_link= 'https://twingit.herokuapp.com/')
+                                          project_link= 'https://that-is.herokuapp.com/')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.project,Project))
@@ -46,7 +46,7 @@ class ProjectTest(TestCase):
 
 class ReviewsTest(TestCase):
     def setUp(self):
-        self.user = User.objects.create(id = 1, username='zyzu')
+        self.user = User.objects.create(id = 1, username='menu')
 
         self.review= Reviews.objects.create(juror= self.user, design=5, usability=5,content=5,comment="good" )
 
