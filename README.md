@@ -1,4 +1,4 @@
-# Imagine Gallery
+# RateIt
 
 
 ## Built By [Dan Kariuki](https://github.com/Buttonupd/)
@@ -35,7 +35,7 @@ Admin should:
 | To edit project/s  | **Through Admin dashboard** | Edit projects and userprofiles|
 | To delete an project | **Through Admin dashboard** | Delete object/project|
 | To project search | **Enter text in search bar** | Users can search by project name|
-| To vote for or against projects  | **CVote** | Users can comment and like projects|
+| To vote for or against projects  | **Vote** | Users can comment and like projects|
 
 
 ## SetUp / Installation Requirements
@@ -49,7 +49,7 @@ Admin should:
 * In your terminal:
 
         $ git clone https://github.com/Buttonupd/RateIt
-        $ cd MyGallery
+        $ cd RateIt
 
 ## Running the Application
 * Creating the virtual environment
@@ -69,7 +69,7 @@ Admin should:
 ## Testing the Application
 * To run the tests for the class files:
 
-        $ ./manage.py test pictures
+        $ ./manage.py test Eject
 
 ## Technologies Used
 * Python3.7
