@@ -1,0 +1,12 @@
+apiVersion:v1
+kind:Pod
+metadata:
+ name:django@herokuapp.com
+ labels:
+  app:RateIt
+spec:
+ containers
+  - name: firstdjangorepo
+    image:231564897/firstdjangorepo
+  ports:
+  - containerPort:8000
